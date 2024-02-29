@@ -1,8 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { Card } from "./components/Card";
+
 // import "./index.css";
 
-const div = React.createElement("div");
-console.log("div: ", div);
+// const paragraph = React.createElement("p", {
+//   id: "test-p-id",
+//   children: ["i am p"],
+// });
 
-ReactDOM.render(div, document.getElementById("root"));
+// const title = <h1>{paragraph}</h1>;
+
+// const div = React.createElement("div", {
+//   name: "main",
+//   id: "test:id",
+//   className: "test-class",
+//   //   children: ["Hello Word ", " UA ", " Lviv"],
+//   children: title,
+// });
+
+ReactDOM.createRoot(document.getElementById("root")).render(<Card />);
